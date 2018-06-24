@@ -7,12 +7,25 @@
 
 
 @section('modal')
-    @include('partials.modal')
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Test</h1>
+                <p class="modal-close">&times;</p>
+            </div>
+            <div class="modal-body">
+                <p>Hello?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn">Save</button>
+            </div>
+        </div>
+    </div>
 @stop
 
 
 
-@section('content')
+@section('main')
     <div class="block">
         <div class="content">
             <h1 class="page-title">Header</h1>

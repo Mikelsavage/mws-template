@@ -5,46 +5,9 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-a,
-p {
-  font-size: $font-size-p;
-}
-
-a,
-h1,
-h2,
-h3,
-li,
-p {
-  color: $text;
-}
-
-h1 {
-  font-size: $font-size-h1;
-}
-
-h2 {
-  font-size: $font-size-h2;
-}
-
-h3 {
-  font-size: $font-size-h3;
-}
 
 html {
   font-size: $font-size-html;
-}
-
-img {
-  width: 100%;
-}
-
-ul {
-  list-style: none;
 }
 
 .block {

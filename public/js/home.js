@@ -10470,39 +10470,37 @@ module.exports = __webpack_require__(6);
  * Initialize modal
  */
 var initializeModal = function initializeModal() {
-    var modal, modalClose, modalContainer, modalToggle;
+    var $modal, $modalClose, $modalToggle;
 
-    modal = $('.modal');
-    modalContainer = $('.modal-container');
-    modalToggle = $('.modal-toggle');
-    modalClose = $('.modal .close');
+    $modal = $('.modal');
+    $modalToggle = $('.modal-toggle');
+    $modalClose = $('.modal-close');
 
     // Private Functions
     var closeModal = function closeModal() {
-        modalContainer.removeClass('active');
+        $modal.removeClass('active');
     };
 
     var openModal = function openModal() {
-        modalContainer.addClass('active');
+        $modal.addClass('active');
     };
 
     // Trigger to open mobile menu
-    modalToggle.click(function (e) {
+    $modalToggle.click(function (e) {
         e.preventDefault();
 
         openModal();
     });
 
     // Trigger to close mobile menu
-    modalClose.click(function (e) {
+    $modalClose.click(function (e) {
         e.preventDefault();
 
         closeModal();
     });
 
-    // Close modal when clicking on something other than modal
     $(document).click(function (e) {
-        if (modalContainer.hasClass("active") && e.target.id == "modal-container") {
+        if ($modal.hasClass('active') && $(e.target).hasClass('modal')) {
             closeModal();
         }
     });

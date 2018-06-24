@@ -1,3 +1,11 @@
+@mixin border($color) {
+  border: .75em solid $color;
+}
+
+@mixin box-shadow($shadow: 2px 2px 18px $black-trans-20) {
+  box-shadow: $shadow;
+}
+
 @mixin clip-path($path) {
   clip-path: $path;
   -webkit-clip-path: $path;
@@ -21,4 +29,12 @@
   -ms-transform: $transform;
   -o-transform: $transform;
   -webkit-transform: $transform;
+}
+
+@mixin transition($property: all) {
+  transition: .3s $property ease;
+}
+
+@mixin transitionTwo($propOne, $propTwo) {
+  transition: .3s $propOne ease, .3s $propTwo ease;
 }
