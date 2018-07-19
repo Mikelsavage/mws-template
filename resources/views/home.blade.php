@@ -1,11 +1,6 @@
 @extends('app', ['page_class' => 'home'])
 
 
-@section('modal-body')
-    <h1>Test</h1>
-@stop
-
-
 @section('modal')
     <div class="modal">
         <div class="modal-content">
